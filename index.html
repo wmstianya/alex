@@ -9,17 +9,17 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            background: url('1.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
         }
         .container {
             width: 80%;
             margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
         }
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
             text-align: center;
         }
         header h1 {
@@ -27,19 +27,29 @@
         }
         section {
             padding: 20px 0;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #444;
         }
         footer {
-            background-color: #333;
-            color: #fff;
             text-align: center;
             padding: 10px 0;
         }
-        a {
-            color: #0066cc;
-            text-decoration: none;
+        .link-icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            vertical-align: middle;
         }
-        a:hover {
+        .github-icon {
+            background: url('https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png') no-repeat center center;
+            background-size: cover;
+        }
+        .link {
+            color: #00ccff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .link:hover {
             text-decoration: underline;
         }
     </style>
@@ -56,28 +66,37 @@
         </section>
         <section id="projects">
             <h2>GitHub 项目</h2>
-            <p>您可以在我的 <a href="https://github.com/yourusername" target="_blank">GitHub</a> 页面找到我感兴趣的项目。以下是一些精选项目：</p>
+            <p>您可以在我的 <a class="link" href="https://github.com/yourusername" target="_blank">
+                <span class="link-icon github-icon"></span>GitHub 页面</a> 找到我感兴趣的项目。以下是一些精选项目：</p>
             <ul>
-                <li><a href="https://github.com/yourusername/project1" target="_blank">项目 1</a> - 简短描述项目 1 的内容。</li>
-                <li><a href="https://github.com/yourusername/project2" target="_blank">项目 2</a> - 简短描述项目 2 的内容。</li>
-                <li><a href="https://github.com/yourusername/project3" target="_blank">项目 3</a> - 简短描述项目 3 的内容。</li>
+                <li><a class="link" href="https://github.com/yourusername/project1" target="_blank">
+                    <span class="link-icon github-icon"></span>项目 1</a> - 简短描述项目 1 的内容。</li>
+                <li><a class="link" href="https://github.com/yourusername/project2" target="_blank">
+                    <span class="link-icon github-icon"></span>项目 2</a> - 简短描述项目 2 的内容。</li>
+                <li><a class="link" href="https://github.com/yourusername/project3" target="_blank">
+                    <span class="link-icon github-icon"></span>项目 3</a> - 简短描述项目 3 的内容。</li>
             </ul>
         </section>
         <section id="blog">
             <h2>随想</h2>
             <p>在这里，我将分享我的一些随想和博客文章，记录我的思考和学习过程。</p>
             <ul>
-                <li><a href="blog1.html" target="_blank">随想 1</a> - 简短描述随想 1 的内容。</li>
-                <li><a href="blog2.html" target="_blank">随想 2</a> - 简短描述随想 2 的内容。</li>
-                <li><a href="blog3.html" target="_blank">随想 3</a> - 简短描述随想 3 的内容。</li>
+                <li><a class="link" href="blog1.html" target="_blank">
+                    <span class="link-icon github-icon"></span>随想 1</a> - 简短描述随想 1 的内容。</li>
+                <li><a class="link" href="blog2.html" target="_blank">
+                    <span class="link-icon github-icon"></span>随想 2</a> - 简短描述随想 2 的内容。</li>
+                <li><a class="link" href="blog3.html" target="_blank">
+                    <span class="link-icon github-icon"></span>随想 3</a> - 简短描述随想 3 的内容。</li>
             </ul>
         </section>
         <section id="contact">
             <h2>联系我</h2>
             <p>如果您有任何问题或建议，可以通过以下方式联系我：</p>
             <ul>
-                <li>Email: <a href="mailto:wmstianya@gmail.com">wmstianya@gmail.com</a></li>
-                <li>GitHub: <a href="https://github.com/wmstianya" target="_blank">github.com/wmstianya</a></li>
+                <li>Email: <a class="link" href="mailto:wmstianya@gmail.com">
+                    <span class="link-icon github-icon"></span>alex_sen@example.com</a></li>
+                <li>GitHub: <a class="link" href="https://github.com/wmstianya" target="_blank">
+                    <span class="link-icon github-icon"></span>github.com/wmstianya</a></li>
             </ul>
         </section>
     </div>
